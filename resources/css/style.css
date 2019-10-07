@@ -1,0 +1,53 @@
+html {
+    background-color: #E8FFFA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7fb3a8;
+}
+
+header {
+    background-color: #ffdbcf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+}
+
+body {
+    margin: 40px;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav li a {
+color: #b37868;
+font-weight: 600;
+text-decoration-line: none;
+text-transform: uppercase;
+}
+
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.jumbotron img {
+    height: 70%;
+    width: 70%;
+}
+
+.whoweare img {
+    height: 10%;
+    width: 10%;
+    border: 5px solid #cefff5;
+    border-radius: 50% 50%;
+
+}
