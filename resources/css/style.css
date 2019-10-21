@@ -1,11 +1,11 @@
 html {
     background-color: #E8FFFA;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Assistant', sans-serif;
     color: #7fb3a8;
 }
 
-header {
-    background-color: #ffdbcf;
+nav {
+    background-color: #cefff5;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,12 +13,22 @@ header {
     height: 40px;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
-header * {
+nav * {
     display: inline;
 }
 
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 84px;
+}
+
+.subhed {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
 body {
     margin: 40px;
 }
@@ -28,7 +38,7 @@ nav li {
 }
 
 nav li a {
-color: #b37868;
+color: #7fb3a8;
 font-weight: 600;
 text-decoration-line: none;
 text-transform: uppercase;
@@ -47,7 +57,13 @@ main {
 .whoweare img {
     height: 10%;
     width: 10%;
-    border: 5px solid #cefff5;
+    border: 5px solid #ffdbcf;
     border-radius: 50% 50%;
+}
+
+.whoweare {
+    display: flex;
+    justify-content: space-around;
+    color: #b37868;
 
 }
