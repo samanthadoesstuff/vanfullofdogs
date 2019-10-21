@@ -64,6 +64,17 @@ main {
 .whoweare {
     display: flex;
     justify-content: space-around;
-    color: #b37868;
+}
 
+.whereweregoing img, 
+.wherewevebeen img{
+    height: 400px;
+    width: 700px;
+    border: 5px solid #ffdbcf;
+}
+
+.whereweregoing,
+.wherewevebeen {
+    margin-top: 200px;
+    margin-bottom: 200px; 
 }
