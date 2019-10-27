@@ -20,6 +20,9 @@ nav * {
     display: inline;
 }
 
+header {
+    text-align: center;
+}
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 84px;
@@ -55,8 +58,7 @@ main {
 }
 
 .whoweare img {
-    height: 10%;
-    width: 10%;
+    width: 100%;
     border: 5px solid #ffdbcf;
     border-radius: 50% 50%;
 }
@@ -78,3 +80,27 @@ main {
     margin-top: 200px;
     margin-bottom: 200px; 
 }
+
+figure {
+    width: 100%;
+    margin: 10px;
+}
+
+/* contact us form */
+form {
+    text-align: left;
+}
+
+input {
+    width: 40%;
+    margin: 8px;
+}
+
+input[type=submit] {
+    background-color: #7fb3a8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
