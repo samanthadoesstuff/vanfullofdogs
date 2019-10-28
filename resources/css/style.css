@@ -119,8 +119,17 @@ h1 {
 .subhed {
     font-size: 20px;
 }
+
+.whereweregoing img, 
+.wherewevebeen img {
+    height: 11em;
+    width: auto;
 }
 
+input[type=submit] {
+    width: 30%;
+
+}
 /* for screens 320 and smaller */
 @media only screen and (max-width: 320px) {
     h1 {
