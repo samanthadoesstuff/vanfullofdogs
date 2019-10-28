@@ -104,3 +104,30 @@ input[type=submit] {
     width: 10%;
 }
 
+/* media queries */
+/* for screens 714px and smaller */
+@media only screen and (max-width: 714px) {
+.jumbotron img {
+    height: 15em;
+    width: auto;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.subhed {
+    font-size: 20px;
+}
+}
+
+/* for screens 320 and smaller */
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.799em;
+    }
+
+    .subhed {
+        font-size: 15px;
+    }
+}
