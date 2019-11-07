@@ -10,6 +10,13 @@ html {
     flex-wrap: wrap;
 }
 
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+/* nav stuff */
 nav {
     background-color: #cefff5;
     position: fixed;
@@ -26,10 +33,6 @@ nav {
 nav label, #hamburger {
     display: none;
 }
-
-/* nav * {
-    display: inline;
-} */
 
 nav ul {
     list-style-type: none;
@@ -49,6 +52,8 @@ text-decoration-line: none;
 text-transform: uppercase;
 }
 
+
+/* headings */
 header {
     text-align: center;
 }
@@ -63,11 +68,7 @@ h1 {
 }
 
 
-main {
-    margin-top: 80px;
-    text-align: center;
-}
-
+/* images */
 .jumbotron img {
     height: 70%;
     width: 70%;
@@ -102,6 +103,61 @@ figure {
     margin: 10px;
 }
 
+/* below are images on about me page */
+.box img {
+    height: 25%;
+    width: auto;
+    margin: 10px;
+    border: 5px solid #ffdbcf;
+    border-radius: 50% 50%;
+} 
+
+/* about us page */
+/* utilizes CSS grid */
+.grid {
+    display: grid;
+    height: 200px;
+    width: auto;
+    grid-template: repeat(5, 1fr) / 1fr 3fr;
+    grid-gap: 30px;
+}
+
+.goosepic {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.tofupic {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.spotpic {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.dexterpic {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.sunnypic {
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.goose,
+.tofu,
+.spot,
+.dexter,
+.sunny {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: left;
+}
+
+/* contact us page */
 /* contact us form */
 form {
     text-align: left;
@@ -146,6 +202,8 @@ input[type=submit] {
         width: 30%;
 
     }
+
+    /* hamburger stuff */
     nav {
         background-color: #E8FFFA;
     }
