@@ -135,7 +135,9 @@ img {
 .whereweregoing,
 .wherewevebeen {
     margin-top: 10%;
-    margin-bottom: 20%; 
+    margin-bottom: 20%;
+    padding-left: 10%;
+    padding-right: 10%; 
 }
 
 figure {
