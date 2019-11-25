@@ -3,22 +3,58 @@
 }
 
 html {
-    background-color: #E8FFFA;
-    font-family: 'Assistant', sans-serif;
-    color: #7fb3a8;
+    /* background-color: #E8FFFA; */
+    background-color: #f6b568;
+    /* font-family: 'Assistant', sans-serif; */
+    /* color: #1d92a4; */
     display: flex;
     flex-wrap: wrap;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Pacifico:400|Poppins:400');
+
+html {font-size: 16px;}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #1d92a4;
+}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {font-size: 3.157em;}
+
+h3 {font-size: 2.369em;}
+
+h4 {font-size: 1.777em;}
+
+h5 {font-size: 1.333em;}
+
+small, .text_small {font-size: 0.75em;}
+
 main {
-    margin-top: 80px;
+    margin-top: 5%;
     text-align: center;
 }
 
 
 /* nav stuff */
 nav {
-    background-color: #cefff5;
+    background-color: #f1692e;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-color: #7fb3a8;
+color: #fff;
 font-weight: 600;
 text-decoration-line: none;
 text-transform: uppercase;
@@ -57,18 +93,23 @@ text-transform: uppercase;
 header {
     text-align: center;
 }
-h1 {
+/* h1 {
     font-family: 'Pacifico', cursive;
     font-size: 84px;
-}
+} */
 
-.subhed {
+/* .subhed {
     font-family: 'Pacifico', cursive;
-    font-size: 30px;
-}
+    font-size: 40px;
+} */
 
 
 /* images */
+img {
+    border-radius: 50% 50%;
+
+}
+
 .jumbotron img {
     height: 70%;
     width: 70%;
@@ -76,8 +117,7 @@ h1 {
 
 .whoweare img {
     width: 100%;
-    border: 5px solid #ffdbcf;
-    border-radius: 50% 50%;
+    border: 5px solid #f1692e;
 }
 
 .whoweare {
@@ -89,13 +129,13 @@ h1 {
 .wherewevebeen img{
     height: 400px;
     width: 700px;
-    border: 5px solid #ffdbcf;
+    border: 5px solid #f1692e;
 }
 
 .whereweregoing,
 .wherewevebeen {
-    margin-top: 200px;
-    margin-bottom: 200px; 
+    margin-top: 10%;
+    margin-bottom: 20%; 
 }
 
 figure {
@@ -108,9 +148,10 @@ figure {
     height: 25%;
     width: auto;
     margin: 10px;
-    border: 5px solid #ffdbcf;
+    border: 5px solid #f1692e;
     border-radius: 50% 50%;
 } 
+
 
 /* about us page */
 /* utilizes CSS grid */
