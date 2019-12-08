@@ -163,7 +163,7 @@ figure {
 } 
 
 .box {
-    align-content: center; 
+    align-items: center; 
 }
 
 
@@ -225,11 +225,11 @@ input {
 }
 
 input[type=submit] {
-    background-color: #7fb3a8;
+    background-color: #0B5656;
     color: white;
     border: none;
     cursor: pointer;
-    width: 10%;
+    width: 30%;
 }
 
 /* media queries */
