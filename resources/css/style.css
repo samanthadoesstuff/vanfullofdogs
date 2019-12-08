@@ -162,6 +162,10 @@ figure {
     border-radius: 50% 50%;
 } 
 
+.box {
+    align-content: center; 
+}
+
 
 /* about us page */
 /* utilizes CSS grid */
@@ -174,7 +178,7 @@ figure {
     grid-gap: 30px;
 }
 
-.goosepic {
+/* .goosepic {
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -207,7 +211,7 @@ figure {
     grid-column-start: 2;
     grid-column-end: 4;
     text-align: left;
-}
+} */
 
 /* contact us page */
 /* contact us form */
@@ -274,6 +278,9 @@ input[type=submit] {
     text-align: center;
 }
 
+.box {
+    grid-column: 1 / -1;
+}
     /* hamburger stuff */
     nav {
         background-color: #f1692e;
