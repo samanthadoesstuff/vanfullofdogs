@@ -217,6 +217,11 @@ figure {
 /* contact us form */
 form {
     text-align: left;
+    background: #f1692e;
+    height: 60vh;
+    width: 60 vw;
+    border-radius: 10%;
+
 }
 
 input {
@@ -301,7 +306,7 @@ input[type=submit] {
         border-top: 9px solid #f1692e;
         border-left: 9px solid #f1692e;
         border-right: 9px solid #f1692e;
-        margin-block: 0px;
+        margin: 0px;
         background-color: #f1692e;
     }
     nav ul {
@@ -313,11 +318,23 @@ input[type=submit] {
 }
 /* for screens 320 and smaller */
 @media only screen and (max-width: 320px) {
-    h1 {
-        font-size: 1.799em;
+    body {
+        width: auto;
+    }
+    /* h1 {
+        font-size: 2em;
+    } */
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.25em;
+    }
+    .subhed {
+        font-size: .85em;
+    }
+    p{
+        font-size: .75em;
     }
 
-    .subhed {
-        font-size: 15px;
-    }
 }
