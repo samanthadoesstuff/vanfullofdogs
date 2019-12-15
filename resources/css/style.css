@@ -215,12 +215,18 @@ figure {
 
 /* contact us page */
 /* contact us form */
+.contactuspage {
+    position: relative;
+    left: 58%;
+}
 form {
     text-align: left;
     background: #f1692e;
     height: 60vh;
-    width: 60 vw;
+    width: 45vw;
     border-radius: 10%;
+    padding-left: 20%;
+    padding-top: 20%;
 
 }
 
@@ -321,6 +327,7 @@ input[type=submit] {
     body {
         width: auto;
     }
+    
     /* h1 {
         font-size: 2em;
     } */
