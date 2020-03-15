@@ -195,7 +195,7 @@ figure {
 }
 
 .whereweregoingsection {
-    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/grandcanyon.jpg");
+    background-image: url("../../resources/park-photos/grandcanyon.jpg");
     background-image: linear-gradient: (rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));
     padding-top: 10%;
     padding-bottom: 50%;
@@ -227,25 +227,25 @@ figure {
 }
 
 .goinglocation1 {
-    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/grandcanyon.jpg");
+    background-image: url("../../resources/park-photos/grandcanyon.jpg");
     padding: 25%;
     background-position: bottom;
 }
 
 .goinglocation2 {
-    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/greatsanddunes.jpg");
+    background-image: url("../../resources/park-photos/greatsanddunes.jpg");
     padding: 25%;
     background-position: bottom;
 }
 
 .goinglocation3 {
-    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/zion.jpg");
+    background-image: url("../../resources/park-photos/zion.jpg");
     padding: 25%;
     background-position: bottom;
 }
 
 .beenlocation1 {
-    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/bigbend.jpg");
+    background-image: url("../../resources/park-photos/bigbend.jpg");
     padding: 25%;
     background-position: center;
 }
