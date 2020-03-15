@@ -3,25 +3,23 @@
 }
 
 html {
-    /* background-color: #E8FFFA; */
-    background-color: #f6b568;
-    /* font-family: 'Assistant', sans-serif; */
-    /* color: #1d92a4; */
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    font-size: 16px;
+
 }
 
 /* site's typography */
 @import url('https://fonts.googleapis.com/css?family=Pacifico:400|Poppins:400');
 
-html {font-size: 16px;}
-
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.45;
-  /* color: #1d92a4; */
-  color: #0B5656;
+  color: #8AA8CD;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 p {
@@ -38,6 +36,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   margin-top: 100px;
   font-size: 4.209em;
+  color: #8AA8CD;
 }
 
 h2 {font-size: 3.157em;}
@@ -53,15 +52,38 @@ small, .text_small {font-size: 0.75em;}
 main {
     margin-top: 5%;
     text-align: center;
+    color: #8AA8CD;
 }
 
+.subhed {
+    font-family: 'Pacifico', cursive;
+    color: #8AA8CD;
+    font-size: 1.5em;
+}
 .bodytext {
     padding-left: 15%;
-    padding-right: 15%;  
+    padding-right: 15%; 
+    padding-top: 3%;
+    padding-bottom: 5%; 
+    color: #8aa8cd;
 }
+/* about us blurb copy */
+.box p {
+    color: #8aa8cd;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #f78a6f;
+    text-decoration: none;
+}
+
 /* nav stuff */
 nav {
-    background-color: #f1692e;
+    background-color: #8AA8CD;
     position: fixed;
     top: 0;
     left: 0;
@@ -90,10 +112,10 @@ nav ul li {
 }
 
 nav ul li a {
-color: #fff;
-font-weight: 600;
-text-decoration-line: none;
-text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 
@@ -101,51 +123,29 @@ text-transform: uppercase;
 header {
     text-align: center;
 }
-/* h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 84px;
-} */
-
-/* .subhed {
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-} */
-
 
 /* images */
-img {
-    border-radius: 50% 50%;
-
-}
-
 .jumbotron img {
-    height: 70%;
-    width: 70%;
+    height: 50%;
+    width: 50%;
+    margin: 1%;
 }
 
 .whoweare img {
-    width: 100%;
-    border: 5px solid #f1692e;
-}
-
-.whoweare {
-    display: flex;
-    justify-content: space-around;
+    width: 70%;
+    border: 5px solid #f78a6f;
+    border-radius: 50% 50%;
 }
 
 .whereweregoing img, 
 .wherewevebeen img{
     height: 400px;
     width: 700px;
-    border: 5px solid #f1692e;
-}
+    border: 5px solid ##f78a6f;
+    border-radius: 50% 50%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 
-.whereweregoing,
-.wherewevebeen {
-    margin-top: 10%;
-    margin-bottom: 20%;
-    padding-left: 10%;
-    padding-right: 10%; 
 }
 
 figure {
@@ -155,10 +155,9 @@ figure {
 
 /* below are images on about me page */
 .box img {
-    height: 25%;
-    width: auto;
+    width: 70%;
     margin: 10px;
-    border: 5px solid #f1692e;
+    border: 5px solid #f78a6f;
     border-radius: 50% 50%;
 } 
 
@@ -166,6 +165,42 @@ figure {
     align-items: center; 
 }
 
+
+/* index page */
+.whowearesection {
+    background-color: #8AA8CD;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.whowearesection h2, p {
+    color: #fff;
+}
+
+.whoweare {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.whereweregoingsection h2, h3, p {
+    color: #fff;
+}
+
+.whereweregoingsection p {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.whereweregoingsection {
+    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/grandcanyon.jpg");
+    background-image: linear-gradient: (rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));
+    padding-top: 10%;
+    padding-bottom: 50%;
+    background-position: bottom;
+}
 
 /* about us page */
 /* utilizes CSS grid */
@@ -178,40 +213,42 @@ figure {
     grid-gap: 30px;
 }
 
-/* .goosepic {
-    grid-row-start: 1;
-    grid-row-end: 2;
+/* where we're going, where we've been pages */
+.whereweregoing,
+.wherewevebeen {
+    margin-top: 5%;
+    color: #fff;
 }
 
-.tofupic {
-    grid-row-start: 2;
-    grid-row-end: 3;
+.whereweregoing p {
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%; 
 }
 
-.spotpic {
-    grid-row-start: 3;
-    grid-row-end: 4;
+.goinglocation1 {
+    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/grandcanyon.jpg");
+    padding: 25%;
+    background-position: bottom;
 }
 
-.dexterpic {
-    grid-row-start: 4;
-    grid-row-end: 5;
+.goinglocation2 {
+    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/greatsanddunes.jpg");
+    padding: 25%;
+    background-position: bottom;
 }
 
-.sunnypic {
-    grid-row-start: 5;
-    grid-row-end: 6;
+.goinglocation3 {
+    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/zion.jpg");
+    padding: 25%;
+    background-position: bottom;
 }
 
-.goose,
-.tofu,
-.spot,
-.dexter,
-.sunny {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    text-align: left;
-} */
+.beenlocation1 {
+    background-image: url("/Users/user/Documents/web-projects/VScode/cc-premium-project/resources/park-photos/bigbend.jpg");
+    padding: 25%;
+    background-position: center;
+}
 
 /* contact us page */
 /* contact us form */
@@ -221,22 +258,33 @@ figure {
 }
 form {
     text-align: left;
-    background: #f1692e;
-    height: 60vh;
+    background: #8AA8CD;
+    height: 90vh;
     width: 45vw;
     border-radius: 10%;
+    color: #fff;
     padding-left: 20%;
     padding-top: 20%;
 
 }
 
 input {
-    width: 40%;
+    height: 4%;
+    width: 70%;
+    border: .5px solid #fff;
+    border-radius: 4px;
     margin: 8px;
+    color: #000;
+}
+
+.commentbox {
+    height: 30%;
+    width: 70%;
+    resize: none;
 }
 
 input[type=submit] {
-    background-color: #0B5656;
+    background-color: #f78a6f;
     color: white;
     border: none;
     cursor: pointer;
@@ -294,13 +342,13 @@ input[type=submit] {
 }
     /* hamburger stuff */
     nav {
-        background-color: #f1692e;
+        background-color: #8AA8CD;
         height: 50px
     }
     nav label {
         display: inline-block;
         color: #ffffff;
-        background: #f1692e;
+        background: #8AA8CD;
         font-style: normal;
         font-size: 1.2em;
         padding: 10px;
@@ -309,11 +357,11 @@ input[type=submit] {
     }
     nav ul li {
         display: block;
-        border-top: 9px solid #f1692e;
-        border-left: 9px solid #f1692e;
-        border-right: 9px solid #f1692e;
+        border-top: 9px solid #8AA8CD;
+        border-left: 9px solid #8AA8CD;
+        border-right: 9px solid #8AA8CD;
         margin: 0px;
-        background-color: #f1692e;
+        background-color: #8AA8CD;
     }
     nav ul {
         display: none;
