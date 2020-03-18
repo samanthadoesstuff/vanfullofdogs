@@ -7,17 +7,17 @@ html {
     display: flex;
     flex-wrap: wrap;
     font-size: 16px;
-
+    scroll-snap-type: y mandatory;
 }
 
-/* site's typography */
+/* site's typography =========================================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Pacifico:400|Poppins:400');
 
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.45;
-  color: #8AA8CD;
+  color: #000;
   margin-left: 0;
   margin-right: 0;
 }
@@ -60,16 +60,17 @@ main {
     color: #8AA8CD;
     font-size: 1.5em;
 }
-.bodytext {
+.introtext {
     padding-left: 15%;
     padding-right: 15%; 
     padding-top: 3%;
     padding-bottom: 5%; 
     color: #8aa8cd;
 }
+
 /* about us blurb copy */
 .box p {
-    color: #8aa8cd;
+    color: #000;
 }
 
 a:visited {
@@ -81,7 +82,22 @@ a:hover {
     text-decoration: none;
 }
 
-/* nav stuff */
+a:active {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.whereweregoingsection a {
+    color: #000;
+}
+
+.whereweregoingsection a:hover {
+    color: #f78a6f;
+}
+/* nav stuff ============================================================================================== */
 nav {
     background-color: #8AA8CD;
     position: fixed;
@@ -101,7 +117,6 @@ nav label, #hamburger {
 
 nav ul {
     list-style-type: none;
-    /*! margin: 0; */
     padding: 0;
     margin-top: auto;
 }
@@ -118,16 +133,31 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-
-/* headings */
+/* header ============================================================================================== */
 header {
     text-align: center;
 }
 
-/* images */
+.goingheader, .beenheader {
+    padding: 10%;
+
+}
+
+/* scroll snap ========================================================================================= */
+.whowearesection, .whereweregoingsection {
+    scroll-snap-stop: normal;
+}
+.goingheader, .beenheader, .goinglocation1, .goinglocation2, .goinglocation3, .beenlocation1 {
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* images ============================================================================================== */
 .jumbotron img {
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
     margin: 1%;
 }
 
@@ -166,11 +196,12 @@ figure {
 }
 
 
-/* index page */
+/* index page ================================================================================================== */
 .whowearesection {
     background-color: #8AA8CD;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
+    color: #fff;
 }
 
 .whowearesection h2, p {
@@ -185,24 +216,24 @@ figure {
     padding-bottom: 4%;
 }
 
-.whereweregoingsection h2, h3, p {
-    color: #fff;
+.whereweregoingsection h2, h3 {
+    color: #8AA8CD;
 }
 
 .whereweregoingsection p {
     margin-left: 25%;
     margin-right: 25%;
+    color: #000;
 }
 
 .whereweregoingsection {
-    background-image: url("../../resources/park-photos/grandcanyon.jpg");
-    background-image: linear-gradient: (rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));
-    padding-top: 10%;
+    background-image: linear-gradient(to top, transparent, #fff 97%), url("../../resources/park-photos/grandcanyon.jpg");
+    padding-top: 2%;
     padding-bottom: 50%;
     background-position: bottom;
 }
 
-/* about us page */
+/* about us page ============================================================================================== */
 /* utilizes CSS grid */
 .grid {
     display: grid;
@@ -213,58 +244,69 @@ figure {
     grid-gap: 30px;
 }
 
-/* where we're going, where we've been pages */
+/* where we're going, where we've been pages ======================================================== */
 .whereweregoing,
 .wherewevebeen {
-    margin-top: 5%;
-    color: #fff;
+    align-content: center;
+    color: #8AA8CD;
 }
 
-.whereweregoing p {
-    color: #fff;
-    padding-left: 10%;
-    padding-right: 10%; 
+.whereweregoing p, .beenlocation1 p {
+    color: #000;
+    padding-left: 20%;
+    padding-right: 20%; 
 }
 
 .goinglocation1 {
-    background-image: url("../../resources/park-photos/grandcanyon.jpg");
-    padding: 25%;
+    background-image: linear-gradient(to top, transparent, #fff 95%), url("../../resources/park-photos/grandcanyon.jpg");
+    padding: 1%;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .goinglocation2 {
-    background-image: url("../../resources/park-photos/greatsanddunes.jpg");
-    padding: 25%;
+    background-image: linear-gradient(to top, transparent, #fff 80%), url("../../resources/park-photos/greatsanddunes.jpg");
+    padding: 1%;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .goinglocation3 {
-    background-image: url("../../resources/park-photos/zion.jpg");
-    padding: 25%;
+    background-image: linear-gradient(to top, transparent, #fff 80%), url("../../resources/park-photos/zion.jpg");
+    padding: 1%;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .beenlocation1 {
-    background-image: url("../../resources/park-photos/bigbend.jpg");
-    padding: 25%;
+    background-image: linear-gradient(to top, transparent, #fff 80%), url("../../resources/park-photos/bigbend.jpg");
+    padding: 1%;
     background-position: center;
+
 }
 
-/* contact us page */
+/* contact us page ============================================================================================== */
 /* contact us form */
 .contactuspage {
-    position: relative;
-    left: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
+
+.contactuspage img {
+    height: 29%;
+    width: 29%;
+}
+
 form {
     text-align: left;
     background: #8AA8CD;
-    height: 90vh;
-    width: 45vw;
-    border-radius: 10%;
+    height: 75vh;
+    width: 30vw;
     color: #fff;
-    padding-left: 20%;
-    padding-top: 20%;
+    padding-left: 6%;
+    padding-top: 6%;
 
 }
 
@@ -291,7 +333,7 @@ input[type=submit] {
     width: 30%;
 }
 
-/* media queries */
+/* media queries ============================================================================================== */
 /* for screens 714px and smaller */
 @media only screen and (max-width: 714px) {
     .jumbotron img {
