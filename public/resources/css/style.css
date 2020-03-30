@@ -109,6 +109,7 @@ nav {
     display: inline-flex; 
     align-items: center;
     font-weight: bold;
+    z-index: 10;
 }
 
 nav label, #hamburger {
