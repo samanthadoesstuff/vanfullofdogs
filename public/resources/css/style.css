@@ -144,10 +144,10 @@ header {
 }
 
 /* scroll snap ========================================================================================= */
-.whowearesection, .whereweregoingsection {
+/* .whowearesection, .whereweregoingsection {
     scroll-snap-stop: normal;
-}
-.goingheader, .beenheader, .goinglocation1, .goinglocation2, .goinglocation3, .beenlocation1 {
+} */
+.jumbotron, .whowearesection, .whereweregoingsection, .goingheader, .beenheader, .goinglocation1, .goinglocation2, .goinglocation3, .beenlocation1 {
     scroll-snap-stop: always;
     scroll-snap-align: start;
     height: 100vh;
@@ -156,9 +156,9 @@ header {
 
 /* images ============================================================================================== */
 .jumbotron img {
-    height: 30%;
-    width: 30%;
-    margin: 1%;
+    height: 50%;
+    width: auto;
+    margin: 0 auto;
 }
 
 .whoweare img {
@@ -195,8 +195,21 @@ figure {
     align-items: center; 
 }
 
+/* below is for tint overlay on top of background photos */
+.texttintbox {
+    background-color: #fff;
+    margin: 300px;
+    opacity: 0.6;
+}
 
 /* index page ================================================================================================== */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 .whowearesection {
     background-color: #8AA8CD;
     padding-top: 5%;
@@ -228,9 +241,11 @@ figure {
 
 .whereweregoingsection {
     background-image: linear-gradient(to top, transparent, #fff 97%), url("../../resources/park-photos/grandcanyon.jpg");
-    padding-top: 2%;
-    padding-bottom: 50%;
     background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* about us page ============================================================================================== */
@@ -248,7 +263,7 @@ figure {
 .whereweregoing,
 .wherewevebeen {
     align-content: center;
-    color: #8AA8CD;
+    /* color: #8AA8CD; */
 }
 
 .whereweregoing p, .beenlocation1 p {
@@ -262,6 +277,9 @@ figure {
     padding: 1%;
     background-position: bottom;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .goinglocation2 {
@@ -269,6 +287,9 @@ figure {
     padding: 1%;
     background-position: bottom;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .goinglocation3 {
@@ -276,12 +297,18 @@ figure {
     padding: 1%;
     background-position: bottom;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .beenlocation1 {
     background-image: linear-gradient(to top, transparent, #fff 80%), url("../../resources/park-photos/bigbend.jpg");
     padding: 1%;
-    background-position: center;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -290,32 +317,34 @@ figure {
 .contactuspage {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     
 }
 
 .contactuspage img {
-    height: 29%;
-    width: 29%;
+    height: 25%;
+    width: 30%;
 }
 
 form {
     text-align: left;
     background: #8AA8CD;
-    height: 75vh;
+    height: 78vh;
     width: 30vw;
     color: #fff;
-    padding-left: 6%;
-    padding-top: 6%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    padding-left: 7%;
 }
 
 input {
-    height: 4%;
+    height: 7%;
     width: 70%;
     border: .5px solid #fff;
     border-radius: 4px;
-    margin: 8px;
+    margin-bottom: 20px;
     color: #000;
 }
 
@@ -323,7 +352,10 @@ input {
     height: 30%;
     width: 70%;
     resize: none;
-    text-align: top;
+    border: .5px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
 }
 
 input[type=submit] {
@@ -331,7 +363,9 @@ input[type=submit] {
     color: white;
     border: none;
     cursor: pointer;
-    width: 30%;
+    font-size: 20px;
+    height: 8%;
+    width: 40%;
 }
 
 /* media queries ============================================================================================== */
@@ -369,20 +403,20 @@ input[type=submit] {
     grid-column: 0;
     grid-row: 0;
     grid-gap: 2px;
-}
-.goose,
-.tofu,
-.spot,
-.dexter,
-.sunny {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: center;
-}
+    }
+    .goose,
+    .tofu,
+    .spot,
+    .dexter,
+    .sunny {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+    }
 
-.box {
-    grid-column: 1 / -1;
-}
+    .box {
+        grid-column: 1 / -1;
+    }
     /* hamburger stuff */
     nav {
         background-color: #8AA8CD;
@@ -412,6 +446,40 @@ input[type=submit] {
     nav input:checked ~ ul {
         display: block;
     }
+
+    .contactuspage img {
+    height: 20%;
+    width: 64%;
+    }
+
+    .contactuspage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form {
+        height: 50%;
+        width: 64%;
+        padding-left: 14%;
+        padding-top: 4%;
+    }
+
+    input {
+        height: 7%;
+        width: 70%;
+    }
+
+    .commentbox {
+        height: 30%;
+        width: 70%;
+    }
+
+    input[type=submit] {
+        font-size: 20px;
+        height: 8%;
+        width: 50%;
+    }
+
 }
 /* for screens 320 and smaller */
 @media only screen and (max-width: 320px) {
