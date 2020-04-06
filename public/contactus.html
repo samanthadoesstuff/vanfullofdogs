@@ -11,7 +11,6 @@
     
     <title>Contact Us | A Van Full of Dogs</title>
 </head>
-<body>
     <nav>
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
@@ -24,37 +23,32 @@
             <li><a href="./contactus.html">Contact Us</a></li>
         </ul>         
     </nav>
-
     <main>
-        <h1>Contact Us</h1>
-            <div class="contactuspage">
+        <img src="../public/resources/park-photos/yosemite.jpg" class="contactusbkgpic">
 
-                <img src="./resources/park-photos/road.jpg" alt="scenic road" >
-
-                <form id="form">
-                    First name:
-                    <br>
-                    <input type="text" name="firstname" required>
-                    <br>
-                    Last name:
-                    <br>
-                    <input type="text" name="lastname" required>
-                    <br>
-                    Email:
-                    <br>
-                    <input type="email" name="email" required>
-                    <br>
-                    Comment:
-                    <br>
-                    <textarea name="comment" class="commentbox" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit" id="btn">
-                    <div id="submitText"></div>
-
-                </form>
-                
-                <img src="./resources/park-photos/yosemite.jpg" alt="yosemite" >
-        </div>  
+        <div class="contactusbox">
+        <h1 class="contactush1">Contact Us</h1>
+            <form id="form" class="validate">
+                First name:
+                <br>
+                <input type="text" name="firstname" required>
+                <br>
+                Last name:
+                <br>
+                <input type="text" name="lastname" required>
+                <br>
+                Email:
+                <br>
+                <input type="email" name="email" required>
+                <br>
+                Comment:
+                <br>
+                <textarea name="comment" class="commentbox" required></textarea>
+                <br>
+                <input type="submit" value="Submit" id="btn">
+                <div id="submitText"></div>
+            </form>  
+        </div>                  
     </main>
     <script type="text/javascript" src="../public/javascript/vandogs.js"></script>
 </body>
