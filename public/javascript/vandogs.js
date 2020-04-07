@@ -32,7 +32,7 @@ const hasError = function (field) {
   if(field.disabled || field.type === "file" || field.type === "reset" || field.type === "submit" || field.type === "button") return
 
   // get validity 
-  const  validity = field.validity;
+  const validity = field.validity;
 
   // if valid, return null
   if(validity.valid) return;
@@ -84,9 +84,9 @@ const hasError = function (field) {
 
 // listen to all blur events
 
-document.addEventListener(blur, function (event) {
+document.addEventListener('blur', function (event) {
   // only run if the field is in a form to be validated
-  if(!event.target.form.classList.contains("validate")) return;
+  if(!event.target.form.classList.contains("validate")) return; 
 
   // validate the field
   const error = event.target.validity;
@@ -215,6 +215,6 @@ document.addEventListener('submit', function (event) {
     }
 
     // Otherwise, let the form submit normally
-    // You could also bolt in an Ajax form submit process here
+    // You could also bolt in an Ajax form submit process here {LOOK INTO THIS, SAM}
 
 }, false);
