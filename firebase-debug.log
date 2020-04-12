@@ -1,0 +1,30 @@
+[debug] [2020-04-12T00:04:51.337Z] ----------------------------------------------------------------------
+[debug] [2020-04-12T00:04:51.341Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-04-12T00:04:51.341Z] CLI Version:   7.15.0
+[debug] [2020-04-12T00:04:51.341Z] Platform:      darwin
+[debug] [2020-04-12T00:04:51.341Z] Node Version:  v12.13.0
+[debug] [2020-04-12T00:04:51.363Z] Time:          Sat Apr 11 2020 19:04:51 GMT-0500 (Central Daylight Time)
+[debug] [2020-04-12T00:04:51.363Z] ----------------------------------------------------------------------
+[debug] [2020-04-12T00:04:51.364Z] 
+[debug] [2020-04-12T00:04:51.478Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-12T00:04:51.479Z] > authorizing via signed-in user
+[debug] [2020-04-12T00:04:51.479Z] [iam] checking project van-full-of-dogs for permissions ["firebase.projects.get"]
+[debug] [2020-04-12T00:04:51.482Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-12T00:04:51.483Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-12T00:04:51.852Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-12T00:04:52.106Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/van-full-of-dogs:testIamPermissions  
+
+[debug] [2020-04-12T00:04:52.376Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-12T00:04:52.378Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/van-full-of-dogs  
+ 
+[debug] [2020-04-12T00:04:52.706Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/user/Documents/web-projects/VScode/cc-premium-project'...
+[info] 
+[debug] [2020-04-12T00:04:52.710Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/van-full-of-dogs/webApps/-/config  
+ 
+[debug] [2020-04-12T00:04:53.151Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5005

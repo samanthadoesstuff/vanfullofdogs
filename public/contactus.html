@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700,800&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
     
     <title>Contact Us | A Van Full of Dogs</title>
 </head>
@@ -19,37 +22,62 @@
             <li><a href="./aboutus.html">About Us</a></li>
             <li><a href="./whereweregoing.html">Where We're Going</a></li>
             <li><a href="./wherewevebeen.html">Where We've Been</a></li>
-            <!-- <li><a href="./faq.html">FAQs</a></li> -->
             <li><a href="./contactus.html">Contact Us</a></li>
         </ul>         
     </nav>
     <main>
-        <img src="../../public/resources/park-photos/yosemite.jpg" class="contactusbkgpic">
+        <img src="../../resources/park-photos/yosemite.jpg" class="contactusbkgpic">
 
         <div class="contactusbox">
         <h1 class="contactush1">Contact Us</h1>
             <form id="form" class="validate">
                 First name:
                 <br>
-                <input type="text" name="firstname" required>
+                <input type="text" name="firstname" id="firstName" required>
                 <br>
                 Last name:
                 <br>
-                <input type="text" name="lastname" required>
+                <input type="text" name="lastname" id="lastName" required>
                 <br>
                 Email:
                 <br>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="email" required>
                 <br>
                 Comment:
                 <br>
-                <textarea name="comment" class="commentbox" required></textarea>
+                <textarea name="comment" class="commentbox" id="commentBox" required></textarea>
                 <br>
                 <input type="submit" value="Submit" id="btn">
                 <div id="submitText"></div>
             </form>  
         </div>                  
     </main>
-    <script type="text/javascript" src="../public/javascript/vandogs.js"></script>
+    <script type="text/javascript" src="../javascript/vandogs.js"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDXG7yekJv8ENNZ0rwIRVoaZ-4EfIT7E_M",
+    authDomain: "van-full-of-dogs.firebaseapp.com",
+    databaseURL: "https://van-full-of-dogs.firebaseio.com",
+    projectId: "van-full-of-dogs",
+    storageBucket: "van-full-of-dogs.appspot.com",
+    messagingSenderId: "426772217411",
+    appId: "1:426772217411:web:2c414ecb39a4f002349ef6",
+    measurementId: "G-1HC5NFF8YL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> -->
+
 </body>
 </html>

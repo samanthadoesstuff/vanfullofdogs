@@ -1,3 +1,37 @@
+// const firebase = require("firebase");
+// // Required for side-effects
+// require("firebase/firestore");
+
+// // Initialize Cloud Firestore through Firebase
+// firebase.initializeApp({
+//   apiKey: "AIzaSyDXG7yekJv8ENNZ0rwIRVoaZ-4EfIT7E_M",
+//   authDomain: "van-full-of-dogs.firebaseapp.com",
+//   databaseURL: "https://van-full-of-dogs.firebaseio.com",
+//   projectId: "van-full-of-dogs",
+// });
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDXG7yekJv8ENNZ0rwIRVoaZ-4EfIT7E_M",
+  authDomain: "van-full-of-dogs.firebaseapp.com",
+  databaseURL: "https://van-full-of-dogs.firebaseio.com",
+  projectId: "van-full-of-dogs",
+  storageBucket: "van-full-of-dogs.appspot.com",
+  messagingSenderId: "426772217411",
+  appId: "1:426772217411:web:2c414ecb39a4f002349ef6",
+  measurementId: "G-1HC5NFF8YL"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const firestore = firebase.firestore();
+const docRef = firestore.doc("public/contactus");
+const form = document.querySelector("#form");
+const firstName = document.querySelector("#firstName");
+const lastName = document.querySelector("#lastName");
+const email = document.querySelector("#email");
+const commentBox = document.querySelector("#commentBox");
+const submitButton = document.querySelector("#btn");
+
 // for contact form ===============================================================
 
 // to display ty greeting after clicking submit button
@@ -218,3 +252,26 @@ document.addEventListener('submit', function (event) {
     // You could also bolt in an Ajax form submit process here {LOOK INTO THIS, SAM}
 
 }, false);
+
+// // for firebase ===============================================================
+
+
+
+
+// |--------------------------- cloud firestore ---------------------------------|
+
+submitButton.addEventListener("click", function() {
+  const firstNameValue = firstName.value;
+  console.log("This is a test to see if " + firstNameValue + " made it to Firestore.");
+  docRef.set({
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    comment: commentBox.value
+  }).then(function(){
+    console.log("Status saved!");
+  }).catch(function(error) {
+    console.log("Got an error: ", error);
+  });
+})
+
