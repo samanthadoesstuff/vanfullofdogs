@@ -1,3 +1,5 @@
+// // for firebase ===============================================================
+
 // const firebase = require("firebase");
 // // Required for side-effects
 // require("firebase/firestore");
@@ -31,6 +33,23 @@ const lastName = document.querySelector("#lastName");
 const email = document.querySelector("#email");
 const commentBox = document.querySelector("#commentBox");
 const submitButton = document.querySelector("#btn");
+
+// |--------------------------- cloud firestore ---------------------------------|
+
+submitButton.addEventListener("click", function() {
+  const firstNameValue = firstName.value;
+  console.log("This is a test to see if " + firstNameValue + " made it to Firestore.");
+  docRef.set({
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    comment: commentBox.value
+  }).then(function(){
+    console.log("Status saved!");
+  }).catch(function(error) {
+    console.log("Got an error: ", error);
+  });
+})
 
 // for contact form ===============================================================
 
@@ -253,25 +272,8 @@ document.addEventListener('submit', function (event) {
 
 }, false);
 
-// // for firebase ===============================================================
 
 
 
 
-// |--------------------------- cloud firestore ---------------------------------|
-
-submitButton.addEventListener("click", function() {
-  const firstNameValue = firstName.value;
-  console.log("This is a test to see if " + firstNameValue + " made it to Firestore.");
-  docRef.set({
-    firstName: firstName.value,
-    lastName: lastName.value,
-    email: email.value,
-    comment: commentBox.value
-  }).then(function(){
-    console.log("Status saved!");
-  }).catch(function(error) {
-    console.log("Got an error: ", error);
-  });
-})
 
